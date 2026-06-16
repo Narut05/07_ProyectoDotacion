@@ -1,15 +1,15 @@
 import pandas as pd
 
 config_reglas_prod = {
-    "Electro":      {"tipo": "incluir", "grupo": ["ELECTRO"]},
-    "Frescos":      {"tipo": "incluir", "grupo": ["FRESCOS"]},
-    "Alm Frescos":  {"tipo": "incluir", "grupo": ["FRESCOS"]},
-    "Abarrotes":    {"tipo": "incluir", "grupo": ["ABARROTES", "NONFOOD"]},
-    "Cajas":        {"tipo": "excluir", "condicion_col": "tipo_venta", "condicion_val": "Venta Ecommerce", "exclusion_col": "area", "exclusion_grupo": ["ELECTRO", "NONFOOD"]},
-    "Recepción":    {"tipo": "total_general"},
-    "Almacén":      {"tipo": "incluir", "grupo": ["ABARROTES", "NONFOOD", "ELECTRO"]},
-    "Inventarios":  {"tipo": "incluir", "grupo": ["ABARROTES", "NONFOOD", "ELECTRO"]},
-    "Multifuncional": {"tipo": "total_general"},
+    "ELECTRO":      {"tipo": "incluir", "grupo": ["ELECTRO"]},
+    "FRESCOS":      {"tipo": "incluir", "grupo": ["FRESCOS"]},
+    'ALMACEN FRESCOS':  {"tipo": "incluir", "grupo": ["FRESCOS"]},
+    'ABARROTES':    {"tipo": "incluir", "grupo": ["ABARROTES", "NONFOOD"]},
+    'CAJAS':        {"tipo": "excluir", "condicion_col": "tipo_venta", "condicion_val": "Venta Ecommerce", "exclusion_col": "area", "exclusion_grupo": ["ELECTRO", "NONFOOD"]},
+    'RECEPCION':    {"tipo": "total_general"},
+    'ALMACEN':      {"tipo": "incluir", "grupo": ["ABARROTES", "NONFOOD", "ELECTRO"]},
+    'INVENTARIOS':  {"tipo": "incluir", "grupo": ["ABARROTES", "NONFOOD", "ELECTRO"]},
+    'MULTIFUNCIONAL': {"tipo": "total_general"},
     }
 
 
